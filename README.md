@@ -30,11 +30,11 @@ BODY raw <br>
 
 
 ## Log in to wallet
-This POST request is to login to a particular account. The form sent should contain -
+This POST request is to login to a particular account. The form sent should contain - <br>
 
-1.Phone Number
-2.Password
-3.remember = True
+1.Phone Number <br>
+2.Password <br>
+3.remember = True <br>
 BODY formdata <br>
 Phone Number 1234567890 <br>
 password admin <br>
@@ -51,12 +51,12 @@ This GET request requests for the balance of any user The URL must contain the I
 
 
 ## Debit from  Wallet 
-This PATCH request debits the wallet of the logged in user with a certain amount of money. The form must contain the amount to be debited. If the balance of the user wallet goes below the minimum balance, the amount will not be debited.
+This PATCH request debits the wallet of the logged in user with a certain amount of money. The form must contain the amount to be debited. If the balance of the user wallet goes below the minimum balance, the amount will not be debited. <br>
 
-BODY raw
-{
-    "amount":20
-}
+BODY raw <br>
+{ <br>
+    "amount":20 <br>
+} <br>
 
 
 <img width="837" alt="Screenshot 2021-05-13 at 1 31 32 AM" src="https://user-images.githubusercontent.com/42965936/118037767-eb091880-b38b-11eb-8b0a-76f7eb815111.png">
@@ -65,10 +65,10 @@ BODY raw
 ## Credit to Wallet
 This PATCH request credits the wallet of the logged in user with a certain amount of money. The form must contain the amount to be credited.
 
-BODY raw
-{
-    "amount":10
-}
+BODY raw <br>
+{ <br>
+    "amount":10 <br>
+} <br>
 
 
 <img width="833" alt="Screenshot 2021-05-13 at 1 31 43 AM" src="https://user-images.githubusercontent.com/42965936/118037923-17bd3000-b38c-11eb-9b48-385065219a22.png">

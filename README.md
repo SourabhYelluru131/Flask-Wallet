@@ -52,7 +52,7 @@ This GET request requests for the balance of any user The URL must contain the I
 
 ## Debit from  Wallet 
 This PATCH request debits the wallet of the logged in user with a certain amount of money. The form must contain the amount to be debited. If the balance of the user wallet goes below the minimum balance, the amount will not be debited. <br>
-
+```Race condition is handled by flask SQLAlchemy itself``` <br>
 BODY raw <br>
 { <br>
     "amount":20 <br>
